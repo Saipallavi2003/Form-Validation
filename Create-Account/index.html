@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h1>Create Account</h1>
+
+        <div class="form-control">
+          <label for="first name"> <span>*</span>First Name:</label>
+          <input type="text" id="first-Name" placeholder="Enter first name" />
+          <small id="first-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="middle name"> <span>*</span>Middle Name:</label>
+          <input type="text" id="middle-Name" placeholder="Enter middle name" />
+          <small id="middle-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="last name"> <span>*</span>Last Name:</label>
+          <input type="text" id="last-Name" placeholder="Enter last name" />
+          <small id="last-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="username">UserId:</label>
+          <input type="text" id="username" placeholder="Enter userId" />
+          <small id="user-error">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email"> <span>*</span>Email:</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small id="email-error">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password"> <span>*</span>Password:</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small id="password-error">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="confrompassword"> <span>*</span> Confirm Password:</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small id="password2-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="phone number">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone-Number"
+            placeholder="Enter phone number "
+          />
+          <small id="phone-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="age"> <span>*</span>Age:</label>
+          <input type="text" id="your-age" placeholder="Enter your age " />
+          <small id="age-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="profile picture">Profile Picture:</label>
+          <input type="file" id="profile-picture" />
+          <small id="profile-error">Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="dateofbirth">Date of Birth:</label>
+          <input type="date" id="date-birth" />
+          <small id="birth-error"></small>
+        </div>
+
+        <div class="form-contro">
+          <label for="dateofbirth">Gender:</label>
+          <input type="radio" id="gender" />Male
+          <input type="radio" id="gender" />Female
+
+          <small id="gender-error"></small>
+        </div>
+
+        <div class="checkbox-control">
+          <label>
+            <input type="checkbox" id="myCheckbox" />
+            <a href="terms-condition.html"
+              >I agree to the terms and conditions</a
+            >
+          </label>
+          <!-- <small id="checkbox-error">error message</small> -->
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
